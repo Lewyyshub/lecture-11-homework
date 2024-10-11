@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url(./images/image\ 1.png);
+  height: 100vh;
+}
+.sun {
+  width: 272px;
+  height: 263px;
+  top: 36px;
+  left: 848px;
+  position: absolute;
+}
+.tree {
+  width: 251px;
+  height: 343px;
+  top: -40px;
+  left: -250px;
+  position: absolute;
+}
+.car1 {
+  width: 119px;
+  height: 127px;
+  top: 600px;
+  left: -70px;
+  position: absolute;
+}
+.car2 {
+  width: 122px;
+  height: 131px;
+  top: 735px;
+  left: -70px;
+  position: absolute;
+}
