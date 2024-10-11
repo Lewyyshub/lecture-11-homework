@@ -4,21 +4,29 @@
 }
 body {
   background-image: url(./images/image\ 1.png);
-  height: 100vh;
 }
 .sun {
   width: 272px;
   height: 263px;
   top: 36px;
-  left: 848px;
+  left: 1150px;
   position: absolute;
+  animation-name: movingsun;
+  transform: rotateZ(360deg);
+  transition-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
 }
 .tree {
-  width: 251px;
-  height: 343px;
-  top: -40px;
-  left: -250px;
+  width: 220px;
+  height: 300px;
+  top: 230px;
+  left: 80%;
   position: absolute;
+  animation-name: moving_tree;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 .car1 {
   width: 119px;
@@ -26,6 +34,9 @@ body {
   top: 600px;
   left: -70px;
   position: absolute;
+  animation-name: movingcar1;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
 }
 .car2 {
   width: 122px;
@@ -33,4 +44,40 @@ body {
   top: 735px;
   left: -70px;
   position: absolute;
+  animation-name: movingcar2;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes moving_tree {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 220px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes movingcar1 {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 127px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes movingcar2 {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 131px);
+  }
+  100% {
+    left: 0%;
+  }
 }
